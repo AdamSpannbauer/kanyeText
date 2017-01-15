@@ -76,9 +76,6 @@ year,type,project,track_num,song
 2004.0,album,The College Dropout,19,Through the Wire
 2004.0,album,The College Dropout,20,Family Business
 2004.0,album,The College Dropout,21,Last Call
-2004.0,album,The College Dropout,22,The College Dropout [Credits]
-2004.0,album,The College Dropout,23,The College Dropout [Tracklist + Album Art]
-2004.0,album,The College Dropout,24,The College Dropout [Booklet]
 2005.0,album,Late Registration,1,Wake Up Mr. West
 2005.0,album,Late Registration,2,Heard 'Em Say
 2005.0,album,Late Registration,3,Touch the Sky
@@ -102,9 +99,6 @@ year,type,project,track_num,song
 2005.0,album,Late Registration,21,Late
 2005.0,album,Late Registration,22,Back to Basics
 2005.0,album,Late Registration,23,We Can Make It Better
-2005.0,album,Late Registration,24,Late Registration [Tracklist + Album Art]
-2005.0,album,Late Registration,25,Late Registration [Booklet]
-2005.0,album,Late Registration,26,Late Registration [Credits]
 2006.0,mixtape,Welcome to Kanye's Soul Mix Show,1,Sinnerman
 2006.0,mixtape,Welcome to Kanye's Soul Mix Show,2,I Wish You Were Here
 2006.0,mixtape,Welcome to Kanye's Soul Mix Show,3,Innocent 'Til Proven Guilty
@@ -140,9 +134,6 @@ year,type,project,track_num,song
 2007.0,album,Graduation,13,Big Brother
 2007.0,album,Graduation,14,Good Night
 2007.0,album,Graduation,15,Bittersweet Poetry
-2007.0,album,Graduation,16,Graduation [Tracklist + Album Art]
-2007.0,album,Graduation,17,Graduation [Credits]
-2007.0,album,Graduation,18,Graduation [Booklet]
 2007.0,mixtape,Can't Tell Me Nothing,1,Stronger
 2007.0,mixtape,Can't Tell Me Nothing,2,Us Placers
 2007.0,mixtape,Can't Tell Me Nothing,3,Can't Tell Me Nothing
@@ -176,9 +167,6 @@ year,type,project,track_num,song
 2008.0,album,808s & Heartbreak,10,See You In My Nightmares
 2008.0,album,808s & Heartbreak,11,Coldest Winter
 2008.0,album,808s & Heartbreak,12,Pinocchio Story
-2008.0,album,808s & Heartbreak,13,808s & Heartbreak [Tracklist + Album Cover]
-2008.0,album,808s & Heartbreak,14,808s & Heartbreak [Credits]
-2008.0,album,808s & Heartbreak,15,808s & Heartbreak [Booklet]
 2010.0,album,My Beautiful Dark Twisted Fantasy,1,Dark Fantasy
 2010.0,album,My Beautiful Dark Twisted Fantasy,2,Gorgeous
 2010.0,album,My Beautiful Dark Twisted Fantasy,3,Power
@@ -193,9 +181,6 @@ year,type,project,track_num,song
 2010.0,album,My Beautiful Dark Twisted Fantasy,12,Lost In The World
 2010.0,album,My Beautiful Dark Twisted Fantasy,13,Who Will Survive in America
 2010.0,album,My Beautiful Dark Twisted Fantasy,14,See Me Now
-2010.0,album,My Beautiful Dark Twisted Fantasy,15,My Beautiful Dark Twisted Fantasy [Credits]
-2010.0,album,My Beautiful Dark Twisted Fantasy,16,My Beautiful Dark Twisted Fantasy [Booklet]
-2010.0,album,My Beautiful Dark Twisted Fantasy,17,My Beautiful Dark Twisted Fantasy [Tracklist + Album Art]
 2010.0,album,My Beautiful Dark Twisted Fantasy,18,Monster
 2013.0,album,Yeezus,1,On Sight
 2013.0,album,Yeezus,2,Black Skinhead
@@ -207,8 +192,6 @@ year,type,project,track_num,song
 2013.0,album,Yeezus,8,Guilt Trip
 2013.0,album,Yeezus,9,Send It Up
 2013.0,album,Yeezus,10,Bound 2
-2013.0,album,Yeezus,11,Yeezus [Credits]
-2013.0,album,Yeezus,12,Yeezus [Tracklist + Album Cover]
 2016.0,album,The Life of Pablo,1,Ultralight Beam
 2016.0,album,The Life of Pablo,2,Father Stretch My Hands Pt. 1
 2016.0,album,The Life of Pablo,3,Pt. 2
@@ -230,5 +213,3 @@ year,type,project,track_num,song
 2016.0,album,The Life of Pablo,19,Fade
 2016.0,album,The Life of Pablo,20,Saint Pablo
 2016.0,album,The Life of Pablo,21,The Life of Pablo Studio Notepad
-2016.0,album,The Life of Pablo,22,The Life of Pablo [Tracklist + Album Cover]
-2016.0,album,The Life of Pablo,23,The Life of Pablo [Credits]

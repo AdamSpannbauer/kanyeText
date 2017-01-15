@@ -97,6 +97,11 @@ songs_df <- disc_df %>%
   ungroup() %>% 
   select(year, type, project, track_num, song)
 
+#remove "songs" that came down that are actually credits, album art, booklet
+#all cases end with "]" & no wanted songs end with "]"
+songs_df <- songs_df %>% 
+  filter(str_sub(song, -1) != "]")
+
 #save full song list
 write_csv(songs_df, "data/kanye_full_song_list.csv")
 
