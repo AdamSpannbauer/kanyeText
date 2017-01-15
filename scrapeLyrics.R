@@ -90,8 +90,12 @@ get_album_songs <- function(genius_base_url, album_name, verbose=TRUE) {
 
 #scrape song titles for discography and unnest
 songs_df <- disc_df %>% 
-  mutate(song = map(project, ~get_album_songs(genius_base_url, .x))) %>% 
-  unnest()
+  mutate(song = map(project, ~get_album_songs(genius_base_url, .x))) %>%
+  unnest() %>% 
+  group_by(project) %>% 
+  mutate(track_num = row_number()) %>% 
+  ungroup() %>% 
+  select(year, type, project, track_num, song)
 
 #save full song list
 write_csv(songs_df, "data/kanye_full_song_list.csv")
@@ -109,8 +113,11 @@ genius_base_url_lyrics <- "https://genius.com/Kanye-west-"
 get_song_lyrics <- function(genius_base_url, song_name, verbose=TRUE) {
   if (verbose) cat("getting lyrics for", song_name, "\n")
   
-  #clean song names the same as album titles
+  # if (song_name == "Can't Tell Me Nothing") song_name <- "Cant Tell Me Nothing"
+  #clean song names almost the same as album titles
+  #dont replace sinlge quoutes with space
   clean_song_title <- song_name %>% 
+    str_replace_all(fixed("'"), "") %>% 
     str_replace_all("[[:punct:]]", " ") %>% 
     trimws() %>% 
     str_replace_all(regex("\\s+"), "-")
