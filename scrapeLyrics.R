@@ -92,6 +92,7 @@ get_album_songs <- function(genius_base_url, album_name, verbose=TRUE) {
 songs_df <- disc_df %>% 
   mutate(song = map(project, ~get_album_songs(genius_base_url, .x))) %>%
   unnest() %>% 
+  distinct() %>% 
   group_by(project) %>% 
   mutate(track_num = row_number()) %>% 
   ungroup() %>% 
@@ -155,6 +156,21 @@ lyrics_df %>%
   group_by(project) %>% 
   summarise(NA_count = sum(is.na(lyrics)),
             NA_proportion = sum(is.na(lyrics)/n()))
+
+# A tibble: 11 × 3
+#                                project NA_count NA_proportion
+#                                  <chr>    <int>         <dbl>
+#   1                  808s & Heartbreak        0     0.0000000
+#   2              Can't Tell Me Nothing       10     0.4761905
+#   3                   Get Well Soon...       21     0.7000000
+#   4                         Graduation        0     0.0000000
+#   5                           I'm Good       14     0.5384615
+#   6                  Late Registration        0     0.0000000
+#   7  My Beautiful Dark Twisted Fantasy        0     0.0000000
+#   8                The College Dropout        0     0.0000000
+#   9                  The Life of Pablo        0     0.0000000
+#   10  Welcome to Kanye's Soul Mix Show       20     1.0000000
+#   11                            Yeezus        0     0.0000000
 
 #filter out lyricless cases and save
 lyrics_df <- lyrics_df %>% 
