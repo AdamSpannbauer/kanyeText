@@ -157,10 +157,10 @@ ggplot(data=nsfw_by_song, aes(x=curse_count)) +
   xlab("Number of FCC Banned Words by Song") +
   ylab("Count")
 
-ggplot(sentiment_by_song, aes(x=track_num, y=curse_count, group=project, colour=project)) +
+ggplot(nsfw_by_song, aes(x=track_num, y=curse_count, group=project, colour=project)) +
   geom_line() +
   xlab("Track Number") +
-  ylab("Score")
+  ylab("Count FCC Banned")
 
 #summarise nsfw by album
 nsfw_by_album <- nsfw_by_song %>% 
